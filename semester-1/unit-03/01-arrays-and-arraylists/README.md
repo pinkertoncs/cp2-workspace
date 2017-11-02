@@ -1,7 +1,7 @@
 # Arrays and ArrayLists
 
 ## Java Array Specification
-    - [Spec](http://docs.oracle.com/javase/specs/jls/se8/html/jls-10.html#jls-10.7)
+- [Spec](http://docs.oracle.com/javase/specs/jls/se8/html/jls-10.html#jls-10.7)
 
 ## Java Array v.s. Python List
 
