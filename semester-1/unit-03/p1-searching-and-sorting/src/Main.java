@@ -25,13 +25,15 @@ public class Main {
     	
         long startTime, endTime;
 
+        double[] binsearch_array = new double[]{2,4,5,6,7,8,19,22,37,100,134,289, 954};
+
         startTime = System.nanoTime();
-        int idx = ArrayUtils.binarySearch(<somearray>, <somevalue>);
+        int idx = ArrayUtils.binarySearch(binsearch_array, 134);
         endTime = System.nanoTime();
         System.out.println("ArrayUtils.binarySearch @ index: " + idx + " took:" + (endTime - startTime));
 
         startTime = System.nanoTime();
-        idx = Arrays.binarySearch(<somearray>,<somevalue>);
+        idx = Arrays.binarySearch(binsearch_array,134);
         endTime = System.nanoTime();
         System.out.println("Arrays.binarySearch @ index: " + idx + " took:" + (endTime - startTime));
         
