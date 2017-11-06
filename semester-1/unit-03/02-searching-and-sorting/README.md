@@ -37,7 +37,7 @@
     - Iterate from first element to next-to-last element
         - if element is greater than subsequent element
             - swap them
-            - swt swap flag to true
+            - set swap flag to true
 
 | Advantage | Disadvantage |
 | :-----: | :-----: |
@@ -59,3 +59,4 @@
 |less swapping |
 
 ## For Insertion and Merge sort, analyze the animations at the link above
+
