@@ -7,9 +7,9 @@ build:
 	javac -sourcepath src/ -d bin/ src/*.java
 
 test: build
-	javac -cp bin/:/home/${USER}/lib/junit-4.12.jar \
+	javac -cp bin/:${HOME}/lib/junit-4.12.jar \
 		-sourcepath test/ -d bin/ test/*.java
-	java -cp bin/:/home/${USER}/lib/junit-4.12.jar:/home/${USER}/lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore ${TESTCLASS} | tee TestReport.txt
+	java -cp bin/:${HOME}/lib/junit-4.12.jar:${HOME}/lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore ${TESTCLASS} | tee TestReport.txt
 
 run: build
 	java -cp bin/ Main
