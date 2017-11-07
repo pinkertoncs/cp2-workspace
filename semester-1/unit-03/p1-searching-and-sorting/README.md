@@ -8,7 +8,7 @@
 ## Directions
 
 1. Implement the **ArrayUtils** class
-    - provides metods for double arrays, including searching & sorting algorithms
+    - provides methods for double arrays, including searching & sorting algorithms
 2. Implement the **Main** class
     - provides testing for **ArrayUtils** and benchmarks against the built-in Array functions
     - Using the benchmarking code as a reference, display how long each sort takes to complete
