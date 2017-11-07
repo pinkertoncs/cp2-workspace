@@ -15,7 +15,7 @@ public class BasicLinkedList {
 
     public static void main(String[] args) {
 
-        // declare a refernce to a node called root, and assign it to "point"
+        // declare a reference to a node called root, and assign it to "point"
         // to a newly created node object
 
         // create a few more node objects and add them to the end of the list,
