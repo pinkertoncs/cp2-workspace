@@ -82,7 +82,7 @@ DEC     HEX     BIN
 2. Navigate to the project directory
     
     ```
-    cd ~/workspace/cp2-workspace/unit-02/p1-data-conversion
+    cd ~/workspace/cp2-workspace/semester-1/unit-02/p1-data-conversion
     ```
 
 3. Run test
