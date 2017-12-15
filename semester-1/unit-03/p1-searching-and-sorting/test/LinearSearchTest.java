@@ -9,7 +9,7 @@ public class LinearSearchTest {
 
         double[] arr = new double[]{};
         
-        assertEquals(ArrayUtils.linearSearch(arr, 0), -1); 
+        assertEquals(-1, ArrayUtils.linearSearch(arr, 0)); 
     }
 
     @Test
@@ -17,7 +17,7 @@ public class LinearSearchTest {
 
         double[] arr = new double[]{1};
         
-        assertEquals(ArrayUtils.linearSearch(arr, 1), 0);
+        assertEquals(0, ArrayUtils.linearSearch(arr, 1));
     }
 
     @Test
@@ -25,7 +25,7 @@ public class LinearSearchTest {
 
         double[] arr = new double[]{1};
         
-        assertEquals(ArrayUtils.linearSearch(arr, 7), -1);
+        assertEquals(-1, ArrayUtils.linearSearch(arr, 7));
     }
 
 
@@ -34,7 +34,7 @@ public class LinearSearchTest {
 
         double[] arr = new double[]{1,2,3,4,5,6,7,8,9};
         
-        assertEquals(ArrayUtils.linearSearch(arr, 1), 0);
+        assertEquals(0, ArrayUtils.linearSearch(arr, 1));
     }
 
     @Test
@@ -42,7 +42,7 @@ public class LinearSearchTest {
 
         double[] arr = new double[]{1,2,3,4,5,6,7,8,9};
         
-        assertEquals(ArrayUtils.linearSearch(arr, 9), 8);
+        assertEquals(8, ArrayUtils.linearSearch(arr, 9));
     }
 
     @Test
@@ -50,6 +50,6 @@ public class LinearSearchTest {
 
         double[] arr = new double[]{1,2,3,4,5,6,7,8,9};
         
-        assertEquals(ArrayUtils.linearSearch(arr, 5), 4);
+        assertEquals(4, ArrayUtils.linearSearch(arr, 5));
     }
 }

@@ -13,7 +13,7 @@ public class Tier1Test {
     @Test
     public void emptyListLength() {
         List l = new List();
-        assertEquals(l.length(), 0);
+        assertEquals(0, l.length());
     }
 
     @Test
@@ -22,7 +22,7 @@ public class Tier1Test {
         l.push(new Person("a", "a"));
         l.push(new Person("b", "b"));
         l.push(new Person("c", "c"));
-        assertEquals(l.length(), 3);
+        assertEquals(3, l.length());
     }
 
     @Test
@@ -43,16 +43,16 @@ public class Tier1Test {
         l.push(p1);
         l.push(p2);
 
-        assertEquals(l.pop(), p2);
-        assertEquals(l.pop(), p1);
-        assertEquals(l.pop(), p);
+        assertEquals(p2, l.pop());
+        assertEquals(p1, l.pop());
+        assertEquals(p, l.pop());
     }
 
     @Test
     public void emptyListPop() {
         List l = new List();
-        assertEquals(l.pop(), null);
-        assertEquals(l.pop(), null);
+        assertEquals(null, l.pop());
+        assertEquals(null, l.pop());
     }
 
     @Test
@@ -76,7 +76,7 @@ public class Tier1Test {
     public void emptyListFind() {
         List l = new List();
         Person p = new Person("a", "a");
-        assertEquals(l.find(p), -1);
+        assertEquals(-1, l.find(p));
     }
 
     @Test
@@ -87,7 +87,7 @@ public class Tier1Test {
         Person p2 = new Person("c", "c");
         l.push(p);
         l.push(p1);
-        assertEquals(l.find(p2), -1);
+        assertEquals(-1, l.find(p2));
         
     }
 
@@ -100,7 +100,7 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.find(p), 0);
+        assertEquals(0, l.find(p));
     }
 
     @Test
@@ -112,7 +112,7 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.find(p1), 1);
+        assertEquals(1, l.find(p1));
     }
 
     @Test
@@ -124,13 +124,13 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.find(p2), 2);
+        assertEquals(2, l.find(p2));
     }
 
     @Test
     public void emptyListGet() {
         List l = new List();
-        assertEquals(l.get(1), null);
+        assertEquals(null, l.get(1));
     }
 
     @Test
@@ -142,7 +142,7 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.get(-1), null);
+        assertEquals(null, l.get(-1));
     }
 
     @Test
@@ -154,7 +154,7 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.get(5), null); 
+        assertEquals(null, l.get(5)); 
     }
 
     @Test
@@ -166,7 +166,7 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.get(0), p);
+        assertEquals(p, l.get(0));
     }
 
     @Test
@@ -178,7 +178,7 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.get(1), p1);
+        assertEquals(p1, l.get(1));
     }
 
     @Test
@@ -190,7 +190,7 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.get(2), p2);
+        assertEquals(p2, l.get(2));
     }
 
     @Test
@@ -202,9 +202,9 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.get(0), p);
-        assertEquals(l.get(1), p1);
-        assertEquals(l.get(2), p2);
+        assertEquals(p, l.get(0));
+        assertEquals(p1, l.get(1));
+        assertEquals(p2, l.get(2));
     }
 
     @Test
@@ -216,25 +216,25 @@ public class Tier1Test {
         l.push(p);
         l.push(p1);
         l.push(p2);
-        assertEquals(l.length(), 3);
+        assertEquals(3, l.length());
         l.pop();
-        assertEquals(l.length(), 2);
+        assertEquals(2, l.length());
         l.push(p2);
         l.push(p2);
         assertTrue(Pattern.matches("\\s*\\[?\\s*a a\\s*b b\\s*c c\\s*c c\\s*\\]?\\s*",
                                    l.toString()));
         l.pop();
-        assertEquals(l.find(p2), 2);
+        assertEquals(2, l.find(p2));
         l.pop();
-        assertEquals(l.find(p2), -1);
-        assertEquals(l.get(0), p);
-        assertEquals(l.get(0), p);
+        assertEquals(-1, l.find(p2));
+        assertEquals(p, l.get(0));
+        assertEquals(p, l.get(0));
         l.pop();
         l.pop();
         l.pop();
-        assertEquals(l.get(0), null);
-        assertEquals(l.length(), 0);
+        assertEquals(null, l.get(0));
+        assertEquals(0, l.length());
         assertTrue(Pattern.matches("\\s*\\[?\\s*\\]?\\s*", l.toString()));
-        assertEquals(l.find(p), -1);
+        assertEquals(-1, l.find(p));
     }
 }

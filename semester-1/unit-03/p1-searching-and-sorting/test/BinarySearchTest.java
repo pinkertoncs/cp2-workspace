@@ -20,7 +20,7 @@ public class BinarySearchTest {
 
         double[] arr = new double[]{};
 
-        assertEquals(ArrayUtils.binarySearch(arr,0), -1);
+        assertEquals(-1, ArrayUtils.binarySearch(arr,0));
     }
 
     @Test
@@ -28,7 +28,7 @@ public class BinarySearchTest {
 
         double[] arr = new double[]{4};
 
-        assertEquals(ArrayUtils.binarySearch(arr,4), 0);
+        assertEquals(0, ArrayUtils.binarySearch(arr,4));
     }
 
     @Test
@@ -36,7 +36,7 @@ public class BinarySearchTest {
 
         double[] arr = new double[]{4};
 
-        assertEquals(ArrayUtils.binarySearch(arr,5), -1);
+        assertEquals(-1, ArrayUtils.binarySearch(arr,5));
     }
 
     @Test

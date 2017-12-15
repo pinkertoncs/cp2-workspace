@@ -7,20 +7,20 @@ public class MaxTest {
     public void singleMaxTest() {
         double[] arr = new double[]{1};
 
-        assertEquals(ArrayUtils.max(arr), 1, .001);
+        assertEquals(1, ArrayUtils.max(arr), .001);
     }
 
     @Test
     public void maxTest() {
         double[] arr = new double[]{100,200,50, 5, 7, 1, 9};
 
-        assertEquals(ArrayUtils.max(arr), 200, .001);
+        assertEquals(200, ArrayUtils.max(arr), .001);
     }
 
     @Test
     public void maxTestLast() {
         double[] arr = new double[]{1,2,3,4,5,6,7,8,9};
 
-        assertEquals(ArrayUtils.max(arr), 9, .001);
+        assertEquals(9, ArrayUtils.max(arr), .001);
     }
 }

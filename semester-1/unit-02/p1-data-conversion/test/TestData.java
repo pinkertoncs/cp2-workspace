@@ -17,9 +17,9 @@ public class TestData {
     @Test
     public void testDefaultConstructor(){
         Data d = new Data();
-        assertEquals(d.getInt(), 0);
-        assertEquals(d.getHex(), '0');
-        assertEquals(d.getBin(), "0000");
+        assertEquals(0, d.getInt());
+        assertEquals('0', d.getHex());
+        assertEquals("0000", d.getBin());
     }
 
     @Test
@@ -27,9 +27,9 @@ public class TestData {
         for(int i = 0; i < decimals.length; i++) {
             Data d = new Data(decimals[i]);
 
-            assertEquals(d.getInt(), decimals[i]);
-            assertEquals(d.getBin(), bins[i]);
-            assertEquals(d.getHex(), hex[i]);
+            assertEquals(decimals[i], d.getInt());
+            assertEquals(bins[i], d.getBin());
+            assertEquals(hex[i], d.getHex());
         }
     }
 
@@ -39,9 +39,9 @@ public class TestData {
             Data d = new Data();
             d.setInt(decimals[i]);
             
-            assertEquals(d.getInt(), decimals[i]);
-            assertEquals(d.getBin(), bins[i]);
-            assertEquals(d.getHex(), hex[i]);
+            assertEquals(decimals[i], d.getInt());
+            assertEquals(bins[i], d.getBin());
+            assertEquals(hex[i], d.getHex());
 
         }
     }
@@ -52,9 +52,9 @@ public class TestData {
             Data d = new Data();
             d.setBin(bins[i]);
 
-            assertEquals(d.getInt(), decimals[i]);
-            assertEquals(d.getBin(), bins[i]);
-            assertEquals(d.getHex(), hex[i]);
+            assertEquals(decimals[i], d.getInt());
+            assertEquals(bins[i], d.getBin());
+            assertEquals(hex[i], d.getHex());
             
         }
     }
@@ -65,9 +65,9 @@ public class TestData {
             Data d = new Data();
             d.setHex(hex[i]);
 
-            assertEquals(d.getInt(), decimals[i]);
-            assertEquals(d.getBin(), bins[i]);
-            assertEquals(d.getHex(), hex[i]);
+            assertEquals(decimals[i], d.getInt());
+            assertEquals(bins[i], d.getBin());
+            assertEquals(hex[i], d.getHex());
         }
     }
 }

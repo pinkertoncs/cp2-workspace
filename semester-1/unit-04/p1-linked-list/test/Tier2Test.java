@@ -14,7 +14,7 @@ public class Tier2Test {
     public void simpleInsertRoot() {
         List l = new List();
         l.insert(0, new Person("a", "a"));
-        assertEquals(l.length(), 1);
+        assertEquals(1, l.length());
         assertTrue(Pattern.matches("\\s*\\[?\\s*a a\\s*\\]?\\s*", l.toString()));
     }
 
@@ -27,7 +27,7 @@ public class Tier2Test {
         l.insert(0, p);
         l.insert(0, p1);
         l.insert(0, p2);
-        assertEquals(l.length(), 3);
+        assertEquals(3, l.length());
         assertTrue(Pattern.matches("\\s*\\[?\\s*c c\\s*b b\\s*a a\\s*\\]?\\s*",
                                    l.toString()));
     }
@@ -41,7 +41,7 @@ public class Tier2Test {
         l.insert(100, p);
         l.insert(100, p1);
         l.insert(100, p2);
-        assertEquals(l.length(), 3);
+        assertEquals(3, l.length());
         assertTrue(Pattern.matches("\\s*\\[?\\s*a a\\s*b b\\s*c c\\s*\\]?\\s*",
                                    l.toString()));
     }
@@ -55,7 +55,7 @@ public class Tier2Test {
         l.insert(0, p);
         l.insert(1, p1);
         l.insert(1, p2);
-        assertEquals(l.length(), 3);
+        assertEquals(3, l.length());
         assertTrue(Pattern.matches("\\s*\\[?\\s*a a\\s*c c\\s*b b\\s*\\]?\\s*",
                                    l.toString()));
     }
@@ -69,7 +69,7 @@ public class Tier2Test {
         l.insert(0, p);
         l.insert(0, p1);
         l.insert(0, p2);
-        assertEquals(l.length(), 3);
+        assertEquals(3, l.length());
         assertTrue(Pattern.matches("\\s*\\[?\\s*c c\\s*b b\\s*a a\\s*\\]?\\s*",
                                   l.toString()));
         l.sort();
@@ -86,14 +86,14 @@ public class Tier2Test {
         l.push(p);
         l.push(p1);
         l.push(p2);  
-        assertEquals(l.pop(2), p2);
-        assertEquals(l.pop(1), p1);
-        assertEquals(l.pop(0), p);
+        assertEquals(p2, l.pop(2));
+        assertEquals(p1, l.pop(1));
+        assertEquals(p, l.pop(0));
     }
 
     @Test
     public void popEmptyList() {
         List l = new List();
-        assertEquals(l.pop(0), null);
+        assertEquals(null, l.pop(0));
     }  
 }

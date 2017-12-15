@@ -9,7 +9,7 @@ public class MinTest {
 
         double[] arr = new double[]{1};
 
-        assertEquals(ArrayUtils.min(arr), 1, .001);
+        assertEquals(1, ArrayUtils.min(arr), .001);
         
     }
 
@@ -18,7 +18,7 @@ public class MinTest {
 
         double[] arr = new double[]{100,200,50, 5, 7, 1, 9};
 
-        assertEquals(ArrayUtils.min(arr), 1, .001);
+        assertEquals(1, ArrayUtils.min(arr), .001);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class MinTest {
 
         double[] arr = new double[]{100,-200,50, 5, 7, -1, 9};
 
-        assertEquals(ArrayUtils.min(arr), -200, .001);
+        assertEquals(-200, ArrayUtils.min(arr), .001);
         
     }
 
@@ -34,6 +34,6 @@ public class MinTest {
     public void minTestLast() {
         double[] arr = new double[]{9,8,7,6,5,4,3,2,1};
 
-        assertEquals(ArrayUtils.min(arr), 1, .001);
+        assertEquals(1, ArrayUtils.min(arr), .001);
     }
 }
