@@ -1,0 +1,39 @@
+
+Tree and Graphs worksheet
+
+1. define the following vocabulary terms
+
+	a. cascading returns
+
+	b. recursion depth
+
+	c. node
+
+	d root
+
+	e. edge
+
+	f. binary search tree
+
+
+2. Outline the following algorthims with pseudo-code
+
+	a. BST insertion
+
+	b. BST in-order traversal
+
+	c. BST removal
+
+
+3. Compare and contrast linked list with a tree
+
+
+4. Consider BST insertion with the following function signature:  void insert( int n );  
+	Why is this signature not sufficient for recursive calls?  
+	Explain the use of the following helper function:  void insertHelp( Node p, int n);
+
+
+5. Consider the example BST in the notes.  Trace the recursive in-order traversal algorithm.
+
+	
+
