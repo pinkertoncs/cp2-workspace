@@ -16,7 +16,7 @@ Tree and Graphs worksheet
 	f. binary search tree
 
 
-2. Outline the following algorthims with pseudo-code
+2. Outline the following algorithms with pseudo-code
 
 	a. BST insertion
 
