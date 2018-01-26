@@ -85,7 +85,7 @@ public Node insertHelp(Node n, int val) {
 
 - In a public method, you won't want to "reveal" the underlying details (namely, the Node reference),
 so you will implement a **helper function**
-	- In this example, we are assuming that rot is a reference to the "root" node of the tree
+	- In this example, we are assuming that root is a reference to the "root" node of the tree
 
 ### Binary Search Tree traversal
 
@@ -123,4 +123,4 @@ inorder(node)
 -Terminology
 	- vertex
 	- edge
-- ![](graphics/tree.png)
+- ![](graphics/graph.png)
