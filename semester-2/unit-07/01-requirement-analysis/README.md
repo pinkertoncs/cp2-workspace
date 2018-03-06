@@ -37,7 +37,7 @@
 | Primary Actor | Student |
 | Supporting Actor(s) | Course |
 | Summary | student registers for a course |
-| Preconditions | 1. Student exists in database (database has student) <br/> 2. Course exists in the database (database as course) <br/> 3. Section of course if currently being offered (course has section) |
+| Preconditions | 1. Student exists in database (database has student) <br/> 2. Course exists in the database (database has course) <br/> 3. Section of course if currently being offered (course has section) |
 | Normal Flow of Events | 1. Student finds course section in database <br/> 2. Student registers for selected section |
 | Extensions |  1. Alternatives to step 1 <br/> &nbsp;&nbsp; a. Student could register directly with course reference number (CRN) <br/> 2. Alternatives to step 2 <br/> &nbsp;&nbsp; a. Admin could register student |
 | Post conditions | 1. Student has section in their course section list <br/> Course section has student in student list |
