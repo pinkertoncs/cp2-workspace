@@ -20,7 +20,7 @@
 
 public interface Command {
 
-    void run(String[] params};
+    void run(String[] params);
 
 }
 ```
